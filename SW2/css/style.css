@@ -19,6 +19,10 @@ body{
 	padding: 0px;
 }
 
+#page-title small{
+	font-size: 1.2em;
+}
+
 #header-content{
 	display: flex;
 	justify-content: space-between;
@@ -83,10 +87,9 @@ body{
   display: none;
 }
 
-#list-meilleurs-joueurs-ul{
-	z-index: 2;
+.link-active{
+	background-color: #121B26;
 }
-
 main{
   display: flex;
   flex-direction: row;
@@ -128,8 +131,6 @@ aside{
 	width: 100%;
 	margin: 5px 10px 5px 2px;
 	padding: 0px 5px 3px 0px;
-	border: 1px solid #193441;
-	background-color: #193441;
 }
 
 .other-article a{
@@ -209,4 +210,11 @@ aside{
 
 .conference-aside table tbody tr:nth-child(odd){
 	
+}
+
+/* Gestion des medias queries*/
+@media screen and (max-width: 992px){
+	body, wrapper{
+		background-color: black;
+	}
 }

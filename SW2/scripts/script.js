@@ -10,6 +10,15 @@ $(document).ready(function(){
 			$("#navbar-first").removeClass('fixed-navigation');
 		}
 	})
+	
+	// Chargement de la page en Ajax
+	$('a').click(function(e){
+		let adresse = e.target.href
+		adresse = adresse.split('/')
+		adresse = adresse[adresse.length - 1]
+		
+		$.ajax()
+	})
 
   $('#aside-est').show()
 
