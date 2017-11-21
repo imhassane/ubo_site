@@ -100,6 +100,22 @@ main{
 	width: 60%;
 }
 
+.last-post p{
+	font-size: 1.4em;
+}
+
+#lire-suite{
+	color: black;
+	font-size: 1.2em;
+	text-decoration: none;
+	border: 1px solid #193441;
+	padding: 1px 5px 1px 5px;
+	background-color: #193441;
+	color: white;
+	border-radius: 4px;
+	line-height: -15px;
+}
+
 .article-title{
 	font-size: 2.5em;
 }

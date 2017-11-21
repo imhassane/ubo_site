@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   $('#aside-est').show()
 
-  $('.navbar-default ul li a').on('click', function(){
+  $('#list-meilleurs-joueurs').on('click', function(){
 
       $('#list-meilleurs-joueurs-ul').fadeToggle()
 
