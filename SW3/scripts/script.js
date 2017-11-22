@@ -11,25 +11,7 @@ $(document).ready(function(){
 		}
 	})
 
-	// Menu deroulant au clic.
-	$('#list-meilleurs-joueurs-ul').hide()
-	$('#list-meilleurs-joueurs').on('click', function(){
-		$('#list-meilleurs-joueurs-ul').slideToggle()
-	}
-
-)
-	// Chargement de la page en Ajax
-	$('a').click(function(e){
-		let adresse = e.target.href
-		adresse = adresse.split('/')
-		adresse = adresse[adresse.length - 1]
-
-		$.ajax()
-	})
-
   $('#aside-est').show()
-
-
   $('.conference-aside-a').on('click', function(){
     $('#aside-est').toggle()
     $('#aside-ouest').toggle()
@@ -39,11 +21,16 @@ $(document).ready(function(){
   $('#aside-ouest-a').addClass('table-inactive');
   $('#aside-est-a').addClass('table-active');
 
-  $('.conference-aside').click(function(){
-	  $('#aside-ouest-a').toggleClass('table-active')
-	  $('#aside-ouest-a').toggleClass('table-inactive')
-	  $('#aside-est-a').toggleClass('table-active')
-	  $('#aside-est-a').toggleClass('table-inactive')
-  })
+  $('#aside-ouest-a a').click(function(){
+		$(this).parent().removeClass('table-inactive')
+		$(this).parent().addClass('table-active')
+		$('#aside-est-a').addClass('table-inactive')
+	})
+
+	$('#aside-est-a a').click(function(){
+		$(this).parent().removeClass('table-inactive')
+		$(this).parent().addClass('table-active')
+		$('#aside-ouest-a').addClass('table-inactive')
+	})
 
 })

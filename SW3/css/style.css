@@ -6,6 +6,12 @@ body{
   z-index: 1;
 }
 
+img{
+    border: 1px solid #193441;
+    border-radius: 1%;
+    box-shadow: 0px 1px 1px #193441;
+}
+
 .wrapper{
   z-index: 2;
 	width: 70%;
@@ -59,6 +65,12 @@ body{
   box-shadow: 0px 3px 5px black;
 }
 
+.fixed-navigation li a{
+  border-left: 1px solid #4B5955;
+  border-left-width: 1.5px;
+  border-left-style:ridge;
+}
+
 .navbar-default{
 	background-color: #193441;
 	box-shadow: 3px 3px 2px #193441;
@@ -86,10 +98,6 @@ body{
   display: block;
 }
 
-#list-meilleurs-joueurs-ul{
-  display: none;
-}
-
 .link-active{
 	background-color: #121B26;
 }
@@ -101,6 +109,13 @@ main{
 
 .main-content{
 	width: 60%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.last-post{
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .last-post p{
@@ -166,6 +181,10 @@ aside{
 }
 
 /* Gestion de la partie "Conférences" */
+.conferences{
+  box-shadow: 0px 3px 2px black;
+}
+
 #conferences{
 	margin: 0px;
 	padding: 0px;
@@ -191,15 +210,19 @@ aside{
   margin: 15px;
 }
 
+/* Gestion de la table de conférence */
 #aside-ouest, #aside-est{
   display: none;
+}
+
+#aside-ouest-a, #aside-est-a{
+    padding: 15px 0px 15px 0px;
 }
 
 .conference-aside-a{
   color: white;
 	text-decoration: none;
-	margin: 15px 0px 0px 0px;
-	padding: 10px 48px 10px 48px;
+  text-align: center;
 }
 
 /* Stylisation de la table de conference. */
@@ -216,6 +239,28 @@ aside{
 	border-collapse: collapse;
 	border-spacing: 25px;
 	width: 100%;
+}
+
+.conference-aside-caption{
+  display: flex;
+  background-color: #193441;
+  border-top: 1px solid white;
+  align-items: center;
+}
+
+.conference-aside-caption img{
+  width: 15%;
+  height: 3%;
+  border: none;
+  box-shadow: 0px 0px 0px white;
+}
+
+.conference-aside-caption span{
+  flex: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
 }
 
 .conference-aside table tbody tr td{
@@ -250,9 +295,7 @@ aside{
     padding-bottom: 15px;
     margin:0;
   }
-  #navbar-first ul li:hover{
-    box-shadow: 0px 5px 2px black;
-  }
+
   #navbar-first ul li a{
     font-size: 1.2em;
     color: white;
@@ -273,13 +316,25 @@ aside{
     width: 100%;
   }
 
+  /* Personnalisation de l'article à la une */
+  .last-post p{
+    font-size: 1.1em;
+  }
+
+  #lire-suite{
+    padding: 0px 3px 0px 3px;
+  }
+
+  .voir-aussi{
+    border: 1px solid #193441;
+  }
+
   .conferences ul li{
     padding: 0px;
     flex: 1;
   }
 
   .conferences ul li a{
-    font-size: 1.2em;
     text-align: center;
   }
 }
