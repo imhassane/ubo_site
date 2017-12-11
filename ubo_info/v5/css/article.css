@@ -1,0 +1,106 @@
+#header{
+  height: 70vh;
+}
+
+#article{
+  position: relative;
+  top: -200px;
+  background-color: white;
+  padding: 5%;
+}
+
+#article-title h1{
+  font-size: 2.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#article-content{
+
+}
+
+figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.article-start{
+  display: block;
+}
+
+.list-item{
+  display: block;
+}
+
+#article-content::first-letter{
+  float: left;
+  font-size: 7em;
+}
+
+#commentaires{
+  margin: 10% 0 10% 0;
+}
+
+form label, span, input[type=submit]{
+  font-family: 'Oswald';
+}
+#comment-title{
+  font-size: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#comment-list{
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+  padding: 3% 10% 3% 10%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#comment-form{
+  display: block;
+}
+
+#comment-form .block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#comment-form .block .form-control{
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 1px;
+}
+
+#comment-form .block .input{
+  padding: 1% 0 1% 0;
+}
+
+#comment-form .block .textarea{
+  resize: none;
+}
+
+#comment-form .block .form-checkbox{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#comment-form .block .form-submit{
+  width: 100%;
+
+  background-color: #FFF;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1.5% 0 1.5% 0;
+}
+
+#comment-form .block .form-submit:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  border-color: #FFF;
+}
