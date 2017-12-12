@@ -53,7 +53,7 @@ $(jQuery).ready(function(){
 
 
   // Pour la gestion des medias queries
-  const media_query_screen_size = 850
+  const media_query_screen_size = 619
   $('#navbar-brand li a').click(function(){
     if($(window).width() < media_query_screen_size){
       let $navbar = $('#navbar-brand li a')
@@ -72,7 +72,7 @@ $(jQuery).ready(function(){
   let goals_title     = $('#goals_title')
   let goals_title_div = $('#goals')
 
-  $(learn_code).hover(function(){
+  $(learn_code).click(function(){
     if($(window).width() < media_query_screen_size){
       $(web_part).slideUp(500)
       $(software_part).slideUp(500)
@@ -80,15 +80,15 @@ $(jQuery).ready(function(){
       $(learn_code_div).slideDown(500)
     }
   })
-  $(conseils_title).hover(function(){
-    if($(window).width() < media_query_screen_size){
+  $(conseils_title).click(function(){
+    if($(window).width() <= media_query_screen_size){
       $(learn_code_div).slideUp(500)
       $(goals_title_div).slideUp(500)
       $(web_part).slideDown(500)
       $(software_part).slideDown(500)
     }
   })
-  $(goals_title).hover(function(){
+  $(goals_title).click(function(){
     if($(window).width() < media_query_screen_size){
       $(learn_code_div).slideUp(500)
       $(goals_title_div).slideDown(500)
@@ -100,7 +100,7 @@ $(jQuery).ready(function(){
   // On affiche tous les éléments masqués après les medias queries.
   let counter = 0;
   $(window).resize(function(){
-    if($(window).width() > media_query_screen_size && counter == 1){
+    if($(window).width() >= media_query_screen_size && counter == 1){
       location.reload(false)
       counter = 0;
     }else{
