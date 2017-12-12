@@ -1,0 +1,88 @@
+/* Affichage  pour les mobiles */
+
+/* Mise en forme du menu de navigation */
+
+#navbar ul{
+	flex-direction: column;
+}
+
+#navbar-items{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+#navbar-items li{
+	padding: 2%;
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#navbar-brand{
+	flex: 1;
+	text-align: center;
+}
+
+/* Mise en forme du contenu */
+#wrapper{
+	display: block;
+}
+
+main{
+	padding: 0;
+	width: 100%;
+}
+
+.details{
+	flex-direction: column;
+}
+
+.details-block{
+	margin: 0;
+	padding: 0;
+}
+
+.details-block .btn{
+	padding: 0;
+}
+
+main .major .major-block{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+main .major .major-block .major-block-img{
+	width: 100%;
+}
+
+main .major .major-block .major-block-img img{
+	width: 100%;
+}
+
+/* Mise en forme du pied de page */
+#footer-wrapper{
+	flex-direction: column;
+}
+
+.footer-links{
+	width: 100%;
+}
+
+.links{
+	text-align: center;
+}
+
+.footer-conseils-title, #frontend-title, #backend-title{
+	font-size: 1em;
+	margin: auto;
+}
+
+.footer-conseils-title{
+	border-bottom: none;
+}
+
+#web-dev-list, #dev-list, #goals{
+	display: none;
+}

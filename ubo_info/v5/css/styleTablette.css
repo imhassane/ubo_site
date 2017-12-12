@@ -1,0 +1,32 @@
+/* Personnalisation de la barre de navigation */
+#navbar-brand, #navbar-items{
+	flex: 1;
+}
+
+/* Les articles seront affichés en bloc */
+#wrapper{
+	display: block;
+}
+
+main{
+	padding: 0;
+	width: 100%;
+}
+
+.details-block{
+	margin: 0;
+	padding: 0;
+}
+
+main .major .major-block{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+main .major .major-block .major-block-img{
+	width: 100%;
+}
+
+main .major .major-block .major-block-img img{
+	width: 100%;
+}
